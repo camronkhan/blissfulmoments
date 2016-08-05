@@ -14,8 +14,5 @@ module Blissfulmoments
 
     # Bower
     config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
-
-    # Serve static assets on Heroku
-    config.serve_static_assets = true
   end
 end
