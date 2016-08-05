@@ -14,4 +14,4 @@ gem 'font-awesome-rails', 		'~> 4.6', '>= 4.6.3.1'
 gem 'autoprefixer-rails', 		'~> 6.3', '>= 6.3.7'
 gem 'byebug', 					'~> 9.0', '>= 9.0.5', 			group: [:development, :test], platform: :mri
 gem 'web-console', 				'~> 3.3', '>= 3.3.1', 			group: :development
-gem 'rails_12factor', 			'~> 0.0.3', 					group: :production
+#gem 'rails_12factor', 			'~> 0.0.3', 					group: :production
