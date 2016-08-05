@@ -1,0 +1,24 @@
+{
+  "name": "blissfulmoments",
+  "description": "Official Website of Blissful Moments Photography",
+  "main": "",
+  "authors": [
+    "Camron Khan"
+  ],
+  "license": "MIT",
+  "homepage": "http://blissfulmomentsbystephanie.com/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "isotope": "^3.0.1",
+    "flickity": "^2.0.2",
+    "magnific-popup": "^1.1.0"
+  }
+}

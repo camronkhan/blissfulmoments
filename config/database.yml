@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: blissfulmoments_development
+  username: postgres
+  password: <%= ENV['DEV_PASSWORD'] %>
+
+test:
+  <<: *default
+  database: blissfulmoments_test
+  username: postgres
+  password: <%= ENV['DEV_PASSWORD'] %>
+
+production:
+  <<: *default
+  database: blissfulmoments_production
+  username: postgres
+  password: <%= ENV['DEV_PASSWORD'] %>
