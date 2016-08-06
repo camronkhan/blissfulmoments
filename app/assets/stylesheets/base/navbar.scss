@@ -1,3 +1,11 @@
 .navbar {
 	min-height: 100px;
 }
+.navbar-default {
+	background-color: $white;
+	border-color: $white;
+}
+nav {
+	.nav-link {
+	}
+}

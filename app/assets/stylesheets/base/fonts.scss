@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|Open+Sans+Condensed:300);
+
+body {
+	font-family: 'Lato', sans-serif !important;
+	color: $black !important;
+	a {
+		text-decoration: none !important;
+		color: $black !important;
+		&:hover {
+			color: $pink !important;
+		}
+		&:focus {
+			color: $pink !important;
+		}
+		&:active {
+			color: $pink !important;
+		}
+	}
+	nav,
+	footer {
+		font-family: 'Open Sans Condensed', sans-serif !important;
+		font-size: 1.4em;
+	}
+	nav {
+		text-transform: uppercase;
+	}
+	footer {
+		color: $light-black;
+		.fa-inverse {
+			color: $light-grey;
+		}
+	}
+}

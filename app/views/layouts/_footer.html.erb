@@ -1,6 +1,41 @@
 <footer id="footer">
 	<div class="container">
-		<p class="h5"><small>&copy; <%= DateTime.now.year %> Blissful Moments Photography. All Rights Reserved.</small></p>
-		<p class="h5"><small>Website created by <a href="http://camronkhan.com">Camron Khan</a></small></p>
+		<div class="info-wrapper">
+			<nav class="social-media text-center">
+				<%= link_to("https://www.facebook.com/blissfulmomentsbystephanie/timeline") do %>
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+					</span>
+				<% end %>
+				<%= link_to("https://twitter.com/blssfulmoments/") do %>
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+					</span>
+				<% end %>
+				<%= link_to("https://www.instagram.com/blissfulmomentsphoto/") do %>
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+					</span>
+				<% end %>
+				<%= link_to("http://www.yelp.com/biz/blissful-moments-by-stephanie-elgin") do %>
+					<span class="fa-stack fa-lg">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-yelp fa-stack-1x fa-inverse"></i>
+					</span>
+				<% end %>
+			</nav>
+			<div class="contact-info text-center">
+				<p class="address">2090 Larkin Ave - Elgin, Illinois 60123</p>
+				<p class="phone">847.651.9623</p>
+				<p class="email">stephanie@blissfulmomentsbystephanie.com</p>
+			</div>
+		</div>
+		<hr>
+		<div class="fine-print text-center">
+			<p class="h5"><small>&copy; <%= DateTime.now.year %> Blissful Moments Photography. All Rights Reserved. Website designed and hosted by <a href="http://camronkhan.com">Camron Khan</a>.</small></p>
+		</div>
 	</div>
 </footer>

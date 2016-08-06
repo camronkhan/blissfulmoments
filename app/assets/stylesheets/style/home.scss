@@ -1,15 +1,14 @@
 #home {
 	.carousel {
 	  background: #EEE;
-	  margin: 0;
+	  margin: 102px 0 0 0;
 	  padding: 0;
 	  overflow: hidden;
-	  height: 100vh;
 	}
 
 	.carousel-cell {
 	  display: block;
-	  min-height: 100vh;
+	  height: auto;
 	  width: 100%;
 	  vertical-align: middle;
 	}

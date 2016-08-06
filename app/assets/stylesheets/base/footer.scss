@@ -1,0 +1,23 @@
+footer {
+	margin-top: 100px;
+	min-height: 200px;
+	background-color: $light-grey;
+	p {
+		margin-bottom: 3px;
+	}
+	hr {
+		width: 50%;
+	}
+	.container {
+		padding: 50px 15px 40px 15px;
+		.info-wrapper {
+			.social-media {
+				margin-bottom: 20px;
+				.fa-stack {
+					margin-left: 7px;
+					margin-right: 7px;
+				}
+			}
+		}
+	}
+}

@@ -1,11 +1,20 @@
 body {
 	.flex-container {
-		display: flex;
+		display: flex !important;
 	}
-	.flex-justify-center {
-		justify-content: center;
+	.flex-row {
+		flex-direction: row !important;
 	}
-	.flex-align-center {
-		align-items: center;
+	.flex-column {
+		flex-direction: column !important;
+	}
+	.flex-horizontal-center {
+		justify-content: space-around !important;
+	}
+	.flex-vertical-center {
+		align-items: center !important;
+	}
+	.flex-fill-parent {
+		flex: 1 !important;
 	}
 }
