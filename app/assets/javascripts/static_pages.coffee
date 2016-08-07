@@ -1,3 +1,11 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+# Create new carousel instance on turbolinks load	https://github.com/turbolinks/turbolinks#running-javascript-when-a-page-loads
+$(document).on 'turbolinks:load', ->
+	$('.carousel').flickity
+		imagesLoaded: true
+	$('.carousel').fadeTo 500, 1
+
+# Destroy current carousel instance before caching	https://github.com/turbolinks/turbolinks#preparing-the-page-to-be-cached
+$(document).on 'turbolinks:before-cache', ->
+	$('.carousel').flickity 'destroy'
+	$('.carousel').css
+		opacity: 0
