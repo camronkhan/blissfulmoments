@@ -1,5 +1,8 @@
 footer {
-	margin-top: 75px;
+	margin-top: 50px;
+	@media screen and (min-width: $mdScreen) {
+		margin-top: 75px;
+	}
 	min-height: 200px;
 	background-color: $light-grey;
 	p {

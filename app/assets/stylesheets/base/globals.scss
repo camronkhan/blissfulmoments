@@ -1,3 +1,16 @@
+// Bootstrap breakpoints
+$smScreen: 768px;
+$mdScreen: 992px;
+$lgScreen: 1200px;
+
+// Colors
+$white: #FFFFFF;
+$black: #000000;
+$light-black: #222222;
+$light-grey: #DBDBDB;
+$dark-grey: #333333;
+$pink: #EF597B;
+
 body {
 	.flex-container {
 		display: flex !important;
