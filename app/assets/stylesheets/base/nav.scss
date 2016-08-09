@@ -1,21 +1,28 @@
 .topnav {
 	min-height: $navbarHeight;
-	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
-	border-color: $white;
-	padding-bottom: 10px;
+	padding-right: 0;
+    padding-left: 0;
+    position: fixed;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	border-radius: 0;
+	top: 0;
+  	border-width: 0;
 	.flex-container {
+		margin: 10px 0;
 		justify-content: flex-start;
 		@media screen and (min-width: $mdScreen) {
 			justify-content: space-around;
 		}
 	}
-	.topnav-link {
+	.navlink {
 		display: none;
 		@media screen and (min-width: $mdScreen) {
 			display: block;
 		}
 	}
-	.brand-logo {
+	.brand-link {
 		float: left;
 		@media screen and (min-width: $mdScreen) {
 			align-self: flex-center;
@@ -28,6 +35,13 @@
 			display: none;
 		}
 	}
+}
+.topnav-featured {
+	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+.topnav-main {
+	background: $white;
+	border-color: $white;
 }
 
 
@@ -49,7 +63,7 @@
 	    right: 25px;
 	    margin-top: 20px;
 	}
-	.sidenav-link {
+	.navlink {
 	    padding: 10px 10px 10px 40px;
 	    display: block;
 	    transition: 0.3s
