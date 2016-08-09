@@ -1,20 +1,30 @@
 #home {
+	margin-top: 0;
+	.featured {
+		height: 100vh;
+		background-image: url("https://s3.amazonaws.com/blissfulmoments/featured/featured_1.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		.headline {
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+	}
 	.carousel {
-	  background: #EEE;
-	  margin: 102px 0 0 0;
-	  padding: 0;
-	  overflow: hidden;
-	  opacity: 0	// carousel invisible until flickity loads, JS updates visibility
-	}
-
-	.carousel-cell {
-	  display: block;
-	  height: auto;
-	  width: 100%;
-	  vertical-align: middle;
-	}
-
-	.flickity-page-dots {
-	  bottom: 10px;
-	}
+		background: #EEE;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		opacity: 0;	// carousel invisible until flickity loads, JS updates visibility
+		.carousel-cell {
+			display: block;
+			height: auto;
+			width: 100%;
+			vertical-align: middle;
+		}
+		.flickity-page-dots {
+			bottom: 10px;
+		}
+	}	
 }

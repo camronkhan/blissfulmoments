@@ -1,3 +1,14 @@
 #studio {
-
+	margin-bottom: 0;
+	.page-header{
+		margin-bottom: 0;
+	}
+	.google-map {
+		min-height: 50vh;
+		padding-top: 60px;
+		background-image: url("https://s3.amazonaws.com/blissfulmoments/asset/google-map.jpg");
+		background-size: cover;
+    	background-position: right bottom;
+    	background-repeat: no-repeat;
+	}
 }

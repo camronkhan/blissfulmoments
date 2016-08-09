@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato|Open+Sans+Condensed:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300|Open+Sans+Condensed:300);
 
 body {
 	font-family: 'Lato', sans-serif !important;
@@ -16,9 +16,26 @@ body {
 			color: $pink !important;
 		}
 	}
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6,
 	nav,
 	footer {
 		font-family: 'Open Sans Condensed', sans-serif !important;
+	}
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+		text-transform: uppercase;
+	}
+	nav,
+	footer {
 		font-size: 1.2em;
 		@media screen and (min-width: $mdScreen) {
 			font-size: 1.4em;
@@ -29,11 +46,42 @@ body {
 		.sidenav-link {
 			font-size: 1.6em;
 		}
+		.topnav-link {
+			color: $white !important;
+		}
 	}
 	footer {
 		color: $light-black;
 		.fa-inverse {
 			color: $light-grey;
+		}
+	}
+	p {
+		font-size: 1em;
+		@media screen and (min-width: $smScreen) {
+			font-size: 1.1em;
+		}
+		@media screen and (min-width: $mdScreen) {
+			font-size: 1.2em;
+		}
+	}
+	.page-title {
+		color: $white;
+		font-size: 4em;
+		@media screen and (min-width: $smScreen) {
+			font-size: 5em;
+		}
+	}
+	#home {
+		.featured {
+			.headline {
+				font-size: 4em;
+				color: $white;
+				span {
+					color: $pink;
+    				text-shadow: 0 0 10px rgba(239, 89, 123, 0.4);
+				}
+			}
 		}
 	}
 }
