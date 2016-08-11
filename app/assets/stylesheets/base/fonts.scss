@@ -22,12 +22,9 @@ body {
 		text-transform: uppercase;
 	}
 	p {
-		font-size: 1em;
+		font-size: 1.1em;
 		@media screen and (min-width: $smScreen) {
-			font-size: 1.1em;
-		}
-		@media screen and (min-width: $mdScreen) {
-			font-size: 1.2em;
+			font-size: 1.3em;
 		}
 	}
 	nav,
@@ -37,34 +34,13 @@ body {
 			font-size: 1.4em;
 		}
 	}
-	footer {
-		color: $light-black;
-		.navlink {
-			color: $black;
-		}
-		.fa-inverse {
-			color: $light-grey;
-		}
-	}
-	.sidenav {
-		.navlink {
-			font-size: 1.6em;
-			color: $black
-		}
-	}
-	.topnav-featured {
-		.navlink {
-			color: $white;
-		}
-	}
-	.topnav-main {
-		.navlink {
-			color: $black;
-		}
+	.lead {
+		font-size: 1.6em !important;
 	}
 	.navlink {
 		text-transform: uppercase;
 		text-decoration: none !important;
+		color: $black;
 		&:hover {
 			color: $pink !important;
 		}
@@ -82,16 +58,25 @@ body {
 			font-size: 5em;
 		}
 	}
-	#home {
-		.featured {
-			.headline {
-				font-size: 4em;
-				color: $white;
-				span {
-					color: $pink;
-    				text-shadow: 0 0 10px rgba(239, 89, 123, 0.4);
-				}
-			}
+	.fa-stack {
+		.fa-stack-2x {
+			border: 1px solid $pink;
+			border-radius: 50%;
+			color: transparent;
+		}
+		.fa-stack-1x {
+			color: $pink;
 		}
 	}
+	.quote {
+		color: $white;
+		font-size: 1.8em;
+		font-style: italic;
+	}
+	.signature {
+		color: $white;
+		font-size: 1.2em;
+		font-style: italic;
+	}
 }
+

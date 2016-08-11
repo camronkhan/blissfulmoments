@@ -1,14 +1,65 @@
 <div class="page" id="<%= @page_title.downcase %>">
-	<div class="featured flex-container flex-column-reverse flex-vertical-bottom" id="featured-image">
+	<div class="featured flex-container flex-column-reverse flex-vertical-bottom">
 		<h1 class="headline">Photography from the <span>Heart</span></h1>
 	</div>
-	<div class="container">
+	<section class="welcome container">
+		<h2 class="text-center">Welcome</h2>
+		<div class="section-underline"></div>
+		<p class="text-center">Thank you for your interest in Blissful Moments Photography! My name is Stephanie, and I love capturing the little moments in life – the laughs, the smiles, the hugs – that we hold close but all too often pass us by. I believe it is these moments that tell the stories of our lives and those of the ones we love. I would love to help you capture these moments and tell your story!</p>
+		<div class="btn-wrapper text-center">
+			<%= link_to('Learn More', about_path, class: 'button') %>
+		</div>
+	</section>
+	<section class="flickity">
+		<h2 class="text-center">Gallery</h2>
+		<div class="section-underline"></div>
 		<div class="carousel">
-			<!--<img class="carousel-cell" src="https://s3.amazonaws.com/blissfulmoments/featured/featured_1.jpg" alt="Featured Image 1">-->
+			<img class="carousel-cell" src="https://s3.amazonaws.com/blissfulmoments/featured/featured_1.jpg" alt="Featured Image 1">
 			<img class="carousel-cell" src="https://s3.amazonaws.com/blissfulmoments/featured/featured_2.jpg" alt="Featured Image 2">
 			<img class="carousel-cell" src="https://s3.amazonaws.com/blissfulmoments/featured/featured_3.jpg" alt="Featured Image 3">
 			<img class="carousel-cell" src="https://s3.amazonaws.com/blissfulmoments/featured/featured_4.jpg" alt="Featured Image 4">
 			<img class="carousel-cell" src="https://s3.amazonaws.com/blissfulmoments/featured/featured_5.jpg" alt="Featured Image 5">
 		</div>
-	</div>
+		<div class="btn-wrapper text-center">
+			<%= link_to('See More', root_path, class: 'button') %>
+		</div>
+	</section>
+	<section class="flexible-options container">
+		<h2 class="text-center">Locations</h2>
+		<div class="section-underline"></div>
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle-thin fa-stack-2x"></i>
+					<i class="fa fa-camera fa-stack-1x"></i>
+				</span>
+				<h3>In Studio</h3>
+				<p>Visit my studio conveniently located in Elgin, IL</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle-thin fa-stack-2x"></i>
+					<i class="fa fa-home fa-stack-1x"></i>
+				</span>
+				<h3>At Home</h3>
+				<p>Schedule a shoot at your home to capture everyday moments</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle-thin fa-stack-2x"></i>
+					<i class="fa fa-map-marker fa-stack-1x"></i>
+				</span>
+				<h3>On Location</h3>
+				<p>Customize your location for memorable photos</p>
+			</div>
+		</div>
+	</section>
+	<section class="testimonial blurry-lights">
+		<div class="semitransparent-mask flex-container flex-row flex-horizontal-center flex-vertical-center">
+			<div class="container">
+				<p class="quote">I did a maternity photo shoot with Stephanie and the pictures came out beautiful! I really enjoyed the entire session and the variety of pictures with different angles/props. She has a lot of creative ideas and things of hers you can use but also lets you bring and use whatever you'd like. She's very professional and easy to work with. I've also seen albums of other pictures she's taken and they are great. I can't wait for her to do my newborn pictures :-)</p>
+				<p class="signature pull-right">Jeanette M.</p>
+			</div>
+		</div>
+	</section>
 </div>

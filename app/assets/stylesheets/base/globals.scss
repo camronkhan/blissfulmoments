@@ -12,6 +12,7 @@ $silver: #BDBDBD;
 $dark-grey: #333333;
 $pink: #EF597B;
 $light-pink: #F2A2B4;
+$lt-pink: #FF7897;
 
 // Navbar height
 $navbarHeight: 100px;
@@ -62,6 +63,28 @@ html {
 		    margin: 0;
 		    padding: 0;
 		}
+		.button {
+		    font-size: 1.4em;
+		    margin: 0;
+		    border: 1px solid $pink !important;
+		    padding: 15px !important;
+		    background-color: $pink !important;
+		    color: $white !important;
+		    &:hover,
+		    &:focus,
+		    &:active {
+		        background-color: #FF7897 !important;
+		        outline: none !important;
+		        text-decoration: none !important;
+		    }
+		}
+		.button.button-sm {
+		    height: 60px !important;
+		    min-width: 100px !important;
+		}
+		.button.button-lg {
+		    min-width: 150px !important;
+		}
 		.page {
 			margin-top: $navbarHeight;
 			margin-bottom: 50px;
@@ -71,12 +94,26 @@ html {
 			background-color: $white;
 		}
 		.page-header {
+			height: 25vh;
+		}
+		.page-break {
+			.lead {
+				display: inline-block !important;
+				margin-left: 20px !important;
+				margin-right: 20px !important;
+			}
+			.button {
+				display: inline-block !important;
+				margin-left: 20px !important;
+				margin-right: 20px !important;
+			}
+		}
+		.blurry-lights {
 			margin-top: 40px;
-			margin-bottom: 60px;
+			margin-bottom: 75px;
 			padding: 0;
 			border-bottom: none;
 			width: 100%;
-			height: 25vh;
 			background-image: url("https://s3.amazonaws.com/blissfulmoments/asset/rose-blurry-lights-wide.jpg");
 			background-size: cover;
 	    	background-position: right bottom;

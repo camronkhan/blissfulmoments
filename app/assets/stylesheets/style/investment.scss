@@ -1,3 +1,60 @@
 #investment {
-	
+	.service {
+	    margin-bottom: 20px;
+	}
+	.services-price {
+	    font-size: 64px;
+	    text-align: center;
+	    color: $pink;
+	}
+	@media (min-width: 768px) {
+	    .services-price {
+	        text-align: right;
+	    }
+	}
+	.services-price-dollar {
+	    font-size: 18px;
+	    top: -38px;
+	}
+	.services-package {
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    //font-weight: 700 !important;
+	    //font-size: 18px;
+	}
+	@media (min-width: 768px) {
+	    .services-package {
+	        margin-top: 20px
+	    }
+	}
+	.services-tagline {
+	    color: $dark-grey;
+	    margin-bottom: 20px;
+	}
+	.services-list {
+	    padding: 0px;
+	}
+	.services-list-item {
+	    margin-bottom: 10px;
+	    list-style: none;
+	    //font-size: 14px !important;
+	}
+	.services-package,
+	.services-tagline,
+	.services-list {
+	    text-align: center;
+	}
+	@media (min-width: 768px) {
+	    .services-package,
+	    .services-tagline,
+	    .services-list {
+	        text-align: left;
+	    }
+	}
+	#the-fine-print {
+	    padding-bottom: 15px !important;
+	}
+	#fine-print-btn {
+	    margin-top: 40px !important;
+	}
 }

@@ -1,30 +1,54 @@
 <div class="page" id="<%= @page_title.downcase %>">
 	<article>
-		<header class="page-header">
+		<header class="page-header blurry-lights">
 			<div class="semitransparent-mask flex-container flex-row flex-horizontal-center flex-vertical-center">
 				<h1 class="page-title"><%= @page_title %></h1>
 			</div>
 		</header>
+		<section class="studio-info container text-center">
+                  <div class="row">
+              		<h2>Blissful Moments Studio</h2>
+                  	<address><h3>2090 Larkin Ave<br>Elgin, IL 60123</h3></address>
+                  </div>
+                  <hr>
+                  <div class="page-break">
+                  	<p class="lead">It's time to tell <b>your</b> story! Schedule your shoot today!</p>
+      				<%= link_to("Let's Go", contact_path, class: 'button') %>
+                  </div>
+                  <hr>
+                  <div class="row">
+                  	<div class="col-md-3">
+                  		<span class="fa-stack fa-3x">
+      						<i class="fa fa-circle-thin fa-stack-2x"></i>
+      						<i class="fa fa-map fa-stack-1x"></i>
+      					</span>
+                  		<p>The Blissful Moments studio is conveniently located in Elgin, IL – one minute south of St. Joseph’s Hospital.</p>
+                  	</div>
+                  	<div class="col-md-3">
+                  		<span class="fa-stack fa-3x">
+      						<i class="fa fa-circle-thin fa-stack-2x"></i>
+      						<i class="fa fa-magic fa-stack-1x"></i>
+      					</span>
+                  		<p>We offer a variety of props and accessories; however, clients are also encouraged to bring their own!</p>
+                  	</div>
+                  	<div class="col-md-3">
+                  		<span class="fa-stack fa-3x">
+      						<i class="fa fa-circle-thin fa-stack-2x"></i>
+      						<i class="fa fa-child fa-stack-1x"></i>
+      					</span>
+                  		<p>It is the perfect setting for your <i>Beautiful Newborns</i> or <i>Little Moments</i> sessions.</p>
+                  	</div>
+                  	<div class="col-md-3">
+                  		<span class="fa-stack fa-3x">
+      						<i class="fa fa-circle-thin fa-stack-2x"></i>
+      						<i class="fa fa-calendar fa-stack-1x"></i>
+      					</span>
+                  		<p> The Blissful Moments studio is currently open by appointments only.  Schedule your appointment today!</p>
+                  	</div>
+                  </div>
+		</section>
 		<section class="google-map">
-			<div class="semitransparent-mask">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<!--<p id="studio-tagline">It's time to tell <strong>your</strong> story. <span class="text-muted">Visit my studio!</span></p>-->
-		                    <h2>Blissful Moments Studio</h2>
-		                    <address><h3>2090 Larkin Ave, Elgin, IL 60123</h3></address>
-		                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.8720497049575!2d-88.32901837077918!3d42.03271059482327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f1ad3dde15dd1%3A0xb6a78ab206d9b816!2s2090+Larkin+Ave%2C+Elgin%2C+IL+60123!5e0!3m2!1sen!2sus!4v1451329334127" frameborder="0" allowfullscreen></iframe>
-		                	
-						</div>
-						<div class="col-md-6">
-							<p>The Blissful Moments studio is conveniently located in Elgin , IL – one minute south of St. Joseph’s Hospital.</p>
-		                	<p>We offer a variety of props and accessories, however, clients are also encouraged to bring their own!</p>
-		                	<p>It is the perfect setting for your <i>Beautiful Newborns</i> or <i>Little Moments</i> sessions.</p>
-		                	<p> The Blissful Moments studio is currently open by appointments only.  Schedule your appointment today!</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			<iframe class="gmap" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKcoIwdMaD4gRF9ssoBUo--Y&key=AIzaSyASsW3q7LDIKHckM89J7CNj30oVeCWqNFU" allowfullscreen></iframe>
 		</section>
 	</article>
 </div>

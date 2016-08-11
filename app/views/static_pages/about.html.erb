@@ -1,21 +1,24 @@
 <div class="page" id="<%= @page_title.downcase %>">
 	<article>
-			<header class="page-header">
-				<div class="semitransparent-mask flex-container flex-row flex-horizontal-center flex-vertical-center">
-					<h1 class="page-title"><%= @page_title %></h1>
-				</div>
-			</header>
-		<section class="container">
+		<header class="page-header blurry-lights">
+			<div class="semitransparent-mask flex-container flex-row flex-horizontal-center flex-vertical-center">
+				<h1 class="page-title"><%= @page_title %></h1>
+			</div>
+		</header>
+		<section class="stephanie-info container">
 			<div class="row">
-				<div class="col-md-6">
-					<p>Thank you for your interest in Blissful Moments Photography! My name is Stephanie, and I love capturing the little moments in life – the laughs, the smiles, the hugs – that we hold close but all too often pass us by. I believe it is these moments that tell the stories of our lives and those of the ones we love. I would love to help you capture these moments and tell your story!</p>
-				</div>
 				<div class="col-md-6">
 					<p>A registered nurse by day, a photographer at heart…I provide a comfortable atmosphere, allowing my clients to share those blissful moments with the ones they love. I enjoy working with newborns, children, families, couples, older adults, and pets, and I know how to provide each and every one the special care and attention they deserve. Schedule a custom photo session by contacting me today!</p>
 				</div>
+				<div class="col-md-6">
+					<%= image_tag 'https://s3.amazonaws.com/blissfulmoments/asset/cannon-cropped.jpg', alt: 'Stephanie', class: 'img-responsive' %>
+				</div>
 			</div>
 			<hr>
-			<p class="lead text-center">Photography from the Heart. Every picture tells a story. Let me help you tell yours.</p>
+			<div class="page-break text-center">
+				<p class="lead" style="display:inline-block;">Every picture tells a story. Let me help you tell <b>yours</b>.</p>
+				<%= link_to("Let's Go", contact_path, class: 'button',  style: "display:inline-block;") %>
+			</div>
 			<hr>
 			<div class="row">
 				<div class="col-md-4">

@@ -1,6 +1,10 @@
 footer {
 	min-height: 200px;
 	background-color: $light-grey;
+	color: $light-black;
+	.navlink {
+		color: $light-black;
+	}
 	p {
 		margin-bottom: 3px;
 	}
@@ -12,10 +16,37 @@ footer {
 		.info-wrapper {
 			.social-media {
 				margin-bottom: 20px;
-				.fa-stack {
-					margin-left: 7px;
-					margin-right: 7px;
+				.navlink {
+					.fa-stack {
+						margin-left: 7px;
+						margin-right: 7px;
+						.fa-stack-1x {
+							color: $light-grey;
+						}
+						.fa-stack-2x {
+							border: none;
+							color: $light-black;
+						}
+					}
+					&:hover {
+						.fa-stack-2x {
+							color: $pink;
+						}
+					}
+					&:focus {
+						.fa-stack-2x {
+							color: $pink;
+						}
+					}
+					&:active {
+						.fa-stack-2x {
+							color: $pink;
+						}
+					}
 				}
+			}
+			.camron-khan {
+				text-transform: none;
 			}
 		}
 	}
