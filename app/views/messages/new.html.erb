@@ -13,7 +13,7 @@
 							<%= f.input :name, as: :string %>
 							<%= f.input :email, as: :email %>
 							<%= f.input :content, as: :text, label: 'Message', input_html: { rows: 10 } %>
-							<%= f.submit 'Submit', class: 'button' %>
+							<%= f.button :submit, class: 'button' %>
 							<%= link_to 'Cancel', root_path, class: 'button button-secondary' %>
 						<% end %>
 					</form>
