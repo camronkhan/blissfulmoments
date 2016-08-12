@@ -9,7 +9,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h2>Online Photo Album</h2>
-					<%= link_to("Access", 'http://blissfulmomentsbystephanie.pixieset.com/', class: 'button') %>
+					<%= link_to 'Access', 'http://blissfulmomentsbystephanie.pixieset.com/', class: 'button' %>
 				</div>
 				<hr class="horizontal-divider">
 				<div class="col-md-6 vertical-divider">
@@ -28,9 +28,8 @@
 							<input type="text" name="os1" maxlength="200" placeholder="Enter your shoot date" class="form-control" id="shoot-date">
 						</div>
 						<div class="form-group">
-							<!--<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">-->
 							<button type="submit" class="button">Pay Now</button>
+							<%= link_to 'Get Help', 'https://s3.amazonaws.com/blissfulmoments/document/Blissful+Moments+Photography+-+Submitting+a+Payment.pdf', target: '_blank', class: 'button button-secondary' %>
 						</div>
 					</form>
 				</div>

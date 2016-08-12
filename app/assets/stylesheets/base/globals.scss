@@ -10,7 +10,8 @@ $light-black: #222222;
 $light-grey: #DBDBDB;
 $dark-grey: #333333;
 $pink: #EF597B;			// rgb: 239,89,123
-$light-pink: #F2A2B4;
+$light-pink: #FF7897;
+$lighter-pink: #F2A2B4;
 
 // Navbar height
 $navbarHeight: 100px;
@@ -70,9 +71,9 @@ html {
 		input[type="tel"]:focus,
 		input[type="color"]:focus,
 		.uneditable-input:focus {   
-  			border-color: rgba(239, 89, 123, 0.8);
-	  		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239, 89, 123, 0.6);
-	  		outline: 0 none;
+  			border-color: rgba(239, 89, 123, 0.8) !important;
+	  		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(239, 89, 123, 0.6) !important;
+	  		outline: 0 none !important;
 		}
 		.semitransparent-mask {
 			background-color: rgba(0, 0, 0, 0.3);
@@ -87,14 +88,26 @@ html {
 		    margin: 0;
 		    border: 1px solid $pink !important;
 		    padding: 15px !important;
-		    background-color: $pink !important;
 		    color: $white !important;
+		    background-color: $pink !important;
 		    &:hover,
 		    &:focus,
 		    &:active {
-		        background-color: #FF7897 !important;
+		    	color: $white !important;
+		        background-color: $light-pink !important;
+		        border-color: $light-pink !important;
 		        outline: none !important;
 		        text-decoration: none !important;
+		    }
+		}
+		.button-secondary {
+			color: $pink !important;
+			background-color: transparent !important;
+			&:hover,
+		    &:focus,
+		    &:active {
+		        background-color: $lighter-pink !important;
+		        border-color: $lighter-pink !important;
 		    }
 		}
 		.button.button-sm {
