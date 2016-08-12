@@ -1,5 +1,5 @@
 Rails.application.configure do
-    # Serving static assests
+  # Serving static assests
   # http://stackoverflow.com/questions/12719541/css-loading-locally-but-not-in-heroku-for-a-rails-app
   config.cache_classes = true
   config.serve_static_assets = true
@@ -88,4 +88,14 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  ActionMailer::Base.smtp_settings = {
+    :port           => ENV['MAILGUN_SMTP_PORT'],
+    :address        => ENV['MAILGUN_SMTP_SERVER'],
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+    :domain         => 'blissfulmoments.herokuapp.com',
+    :authentication => :plain,
+  }
+  ActionMailer::Base.delivery_method = :smtp
 end

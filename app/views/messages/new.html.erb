@@ -1,0 +1,24 @@
+<div class="page" id="<%= @page_title.downcase %>">
+	<article>
+		<header class="page-header blurry-lights">
+			<div class="semitransparent-mask flex-container flex-row flex-horizontal-center flex-vertical-center">
+				<h1 class="page-title"><%= @page_title %></h1>
+			</div>
+		</header>
+		<form>
+			<div class="form">
+				<%= simple_form_for @message, url: contact_path do |f| %>
+					<%= f.input :name, as: :string %>
+					<%= f.input :email, as: :email %>
+					<%= f.input :content, as: :text, input_html: { rows: 10 } %>
+					<div class="btn-wrapper">
+						<%= f.button :submit, class: 'btn btn-primary' %>
+					</div>
+				<% end %>
+			</div>
+			<div class="btn-wrapper">
+				<%= link_to 'Cancel', root_path, class: 'btn btn-primary' %>
+			</div>
+		</form>
+	</article>
+</div>
