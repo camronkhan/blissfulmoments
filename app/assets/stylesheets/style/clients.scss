@@ -2,13 +2,34 @@
 	.page-header {
 		margin-bottom: 50px;
 	}
-	h2 {
-		margin-bottom: 30px;
+	.button {
+		margin-top: 20px;
 	}
 	.col-md-6 {
 		margin-bottom: 60px;
 		@media screen and (min-width: $mdScreen) {
 			margin-bottom: 0;
+		}
+	}
+	.form-group {
+		margin-top: 20px;
+		@media screen and (min-width: $smScreen) {
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+	}
+	.vertical-divider {
+		border-left: none;
+		@media screen and (min-width: $mdScreen) {
+			border-left: 1px solid $light-grey;
+		}
+	}
+	.horizontal-divider {
+		display: block;
+		width: 80%;
+		margin-bottom: 50px;
+		@media screen and (min-width: $mdScreen) {
+			display: none;
 		}
 	}
 }

@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require isotope/dist/isotope.pkgd.min.js
+//= require isotope-packery/packery-mode.pkgd.min.js
 //= require flickity/dist/flickity.pkgd.min.js
 //= require magnific-popup/dist/jquery.magnific-popup.min.js
 //= require_tree .

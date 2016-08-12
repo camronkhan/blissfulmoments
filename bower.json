@@ -21,6 +21,7 @@
     "flickity": "^2.0.2",
     "magnific-popup": "^1.1.0",
     "font-awesome": "^4.6.3",
-    "flickity-imagesloaded": "^2.0.0"
+    "flickity-imagesloaded": "^2.0.0",
+    "isotope-packery": "^2.0.0"
   }
 }

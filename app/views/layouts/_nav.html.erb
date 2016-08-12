@@ -1,7 +1,7 @@
 <nav class="topnav topnav-featured" id="topnav-featured" role="navigation">
 	<div class="flex-container">
 		<div class="container-fluid flex-fill-parent flex-container flex-row flex-vertical-center">
-			<%= link_to 'Gallery', root_path, class: 'navlink' %>
+			<%= link_to 'Gallery', gallery_path, class: 'navlink' %>
 			<%= link_to 'About', about_path, class: 'navlink' %>
 			<%= link_to 'Investment', investment_path, class: 'navlink' %>
 			<%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/logo/signature-white-cropped.png', alt: 'Blissful Moments Photography', width: 250, class: 'brand-logo'), root_path, class: 'brand-link', id: 'white-signature' %>
@@ -16,7 +16,7 @@
 <nav class="topnav topnav-main" role="navigation">
 	<div class="flex-container">
 		<div class="container-fluid flex-fill-parent flex-container flex-row flex-vertical-center">
-			<%= link_to 'Gallery', root_path, class: 'navlink' %>
+			<%= link_to 'Gallery', gallery_path, class: 'navlink' %>
 			<%= link_to 'About', about_path, class: 'navlink' %>
 			<%= link_to 'Investment', investment_path, class: 'navlink' %>
 			<%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/logo/signature-black-cropped.png', alt: 'Blissful Moments Photography', width: 250, class: 'brand-logo'), root_path, class: 'brand-link', id: 'black-signature' %>
@@ -31,7 +31,7 @@
 <nav class="sidenav" role="navigation">
 	<a href="javascript:void(0)" class="close-sidenav navlink pull-right"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
 	<%= link_to 'Home', root_path, class: 'navlink' %>
-	<%= link_to 'Gallery', root_path, class: 'navlink' %>
+	<%= link_to 'Gallery', gallery_path, class: 'navlink' %>
 	<%= link_to 'About', about_path, class: 'navlink' %>
 	<%= link_to 'Investment', investment_path, class: 'navlink' %>
 	<%= link_to 'Studio', studio_path, class: 'navlink' %>

@@ -13,3 +13,4 @@ gem 'bootstrap-sass', 			'~> 3.3', '>= 3.3.6'
 gem 'autoprefixer-rails', 		'~> 6.3', '>= 6.3.7'
 gem 'byebug', 					'~> 9.0', '>= 9.0.5', 			group: [:development, :test], platform: :mri
 gem 'web-console', 				'~> 3.3', '>= 3.3.1', 			group: :development
+gem 'simple_form', 				'~> 3.2', '>= 3.2.1'

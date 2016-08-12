@@ -1,0 +1,125 @@
+<div class="page" id="<%= @page_title.downcase %>">
+	<article>
+		<header class="page-header blurry-lights">
+			<div class="semitransparent-mask flex-container flex-row flex-horizontal-center flex-vertical-center">
+				<h1 class="page-title"><%= @page_title %></h1>
+			</div>
+		</header>
+		<section class="container">
+			<div class="button-group filters-button-group">
+			  <button class="button is-checked" data-filter="*">All</button>
+			  <button class="button" data-filter=".newborn">Newborn</button>
+			  <button class="button" data-filter=".maternity">Maternity</button>
+			  <button class="button" data-filter=".infant">Infant</button>
+			  <button class="button" data-filter=".toddler">Toddler</button>
+			  <button class="button" data-filter=".child">Child</button>
+			  <button class="button" data-filter=".teen">Teen</button>
+			  <button class="button" data-filter=".family">Family</button>
+			  <button class="button" data-filter=".couple">Couple</button>
+			  <button class="button" data-filter=".occasion">Occasion</button>
+			  <button class="button" data-filter=".in-studio">In Studio</button>
+			  <button class="button" data-filter=".on-location">On Location</button>
+			  <button class="button" data-filter=".at-home">At Home</button>
+			</div>
+			<div class="gallery">
+			  <div class="gallery-sizer"></div>
+			  <div class="gallery-item child on-location">
+			  	<%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_0027.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_0027.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item child on-location">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_0083.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_0083.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item couple on-location">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_0140.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_0140.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item width2 infant in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_0291.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_0291.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item child in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_0536.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_0536.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item toddler in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_0680.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_0680.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item toddler in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_0686.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_0686.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item width2 child teen family at-home">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_0763.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_0763.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item child teen family at-home on-location">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_0913.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_0913.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item child teen family at-home on-location">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_0933.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_0933.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item infant in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_1760.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_1760.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item infant in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_1835.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_1835.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item infant occasion in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_4130.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_4130.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item infant in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_4386.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_4386.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item width2 infant in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_4467.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_4467.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item infant in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_4493.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_4493.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item maternity in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_5054.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_5054.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item toddler family in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_5262.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_5262.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item infant">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_5883.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_5883.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item couple in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_6258.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_6258.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item couple on-location">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_6495.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_6495.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item child family in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_6985.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_6985.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item infant in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_7085.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_7085.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item infant in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_7107.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_7107.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item width2 infant occasion in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_7702.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_7702.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item child in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_8023.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_8023.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item toddler in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_8087.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_8087.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item width2 child family in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_8892.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_8892.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item newborn on-location">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_9581.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_9581.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item newborn on-location">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_9596.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_9596.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item width2 infant in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_9934.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_9934.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			  <div class="gallery-item infant in-studio">
+			    <%= link_to image_tag('https://s3.amazonaws.com/blissfulmoments/DSC_9951.jpg', class: 'gallery-image'), 'https://s3.amazonaws.com/blissfulmoments/DSC_9951.jpg', class: 'gallery-image-popup navlink' %>
+			  </div>
+			</div>
+		</section>
+	</article>
+</div>
