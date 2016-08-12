@@ -1,0 +1,53 @@
+#enter {
+	margin: 0;
+	.landing {
+		height: 100vh;
+		background-image: url("https://s3.amazonaws.com/blissfulmoments/featured/featured_1.jpg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		.logo-wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 300px;
+			.logo {
+				text-decoration: none;
+				.signature {
+					padding-left: 20px;
+					padding-top: 20px;
+					width: 100%;
+				}
+				.enter-link {
+					margin: 3px 0 0 0;
+					text-decoration: none;
+					color: $gold;
+					&:hover,
+					&:focus,
+					&:active {
+						color: $gold;
+						text-decoration: none;
+					}
+				}
+			}
+			
+		}
+		
+		.headline-wrapper {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			.headline {
+				font-size: 4em;
+				color: $white;
+				span {
+					color: $pink;
+					text-shadow: 0 0 10px rgba(239, 89, 123, 0.4);
+				}
+			}
+		}
+	}
+}

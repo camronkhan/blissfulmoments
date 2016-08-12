@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   get 'messages/create'
 
   	root 'static_pages#home'
-  
+  	
+  	get		'enter',		to: 'static_pages#enter',			as: 'enter'
 	get 	'home',       	to: 'static_pages#home',        	as: 'home'
 	get		'gallery',		to: 'photos#index',					as: 'gallery'
 	get     'about',      	to: 'static_pages#about',       	as: 'about'

@@ -45,12 +45,15 @@
 		}
 	}
 	.flickity {
+		margin-top: 0;
 		.carousel {
 			background: #EEE;
 			opacity: 0;	// carousel invisible until flickity loads, JS updates visibility
+			max-height: 100vh;
+			overflow: hidden;
 			.carousel-cell {
 				display: block;
-				height: 50vh;
+				width: 100%;
 			}
 			.flickity-page-dots {
 				bottom: 10px;

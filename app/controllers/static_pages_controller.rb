@@ -1,4 +1,8 @@
 class StaticPagesController < ApplicationController
+  def enter
+    @page_title = "Enter"
+  end
+
   def home
     @page_title = "Home"
   end
