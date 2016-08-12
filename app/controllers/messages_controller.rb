@@ -7,7 +7,7 @@ class MessagesController < ApplicationController
 	def create
 		@message = Message.new(message_params)
 		if @message.valid?
-			MessageMailer.new_message(@message).deliver
+			MessageMailer.new_message(@message).deliver_now
 			redirect_to contact_path, notice: "Your message has been sent."
 		else
 			flash[:alert] = "An error occurred while sending the message."
