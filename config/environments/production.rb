@@ -1,15 +1,5 @@
 Rails.application.configure do
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    domain:               'heroku.com',
-    user_name:            'camron.khan@gmail.com',
-    password:             'Skwatz345',
-    authentication:       'plain',
-    enable_starttls_auto: true  }
-
-  # Serving static assests
+    # Serving static assests
   # http://stackoverflow.com/questions/12719541/css-loading-locally-but-not-in-heroku-for-a-rails-app
   config.cache_classes = true
   config.serve_static_assets = true

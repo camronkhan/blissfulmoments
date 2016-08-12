@@ -6,8 +6,6 @@ Rails.application.routes.draw do
 	get     'about',      	to: 'static_pages#about',       	as: 'about'
 	get     'investment',	to: 'static_pages#investment',		as: 'investment'
 	get     'studio', 	  	to: 'static_pages#studio',  		as: 'studio'
-	get     'contact',    	to: 'messages#new',   		 		as: 'contact'
-	post    'contact',    	to: 'messages#create'
 	get     'clients',      to: 'static_pages#clients',			as: 'clients'
 	get		'gallery',		to: 'photos#index',					as: 'gallery'
 
