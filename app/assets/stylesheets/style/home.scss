@@ -52,8 +52,34 @@
 			max-height: 100vh;
 			overflow: hidden;
 			.carousel-cell {
+				height: 100vh;
+				width: 100%;
 				display: block;
 				width: 100%;
+				background-size: cover;
+				background-position: top;
+				background-repeat: no-repeat;
+			}
+			#featured-image-1 {
+				background-image: url("https://s3.amazonaws.com/blissfulmoments/featured/featured_1.jpg");
+			}
+			#featured-image-2 {
+				background-image: url("https://s3.amazonaws.com/blissfulmoments/featured/featured_2.jpg");
+			}
+			#featured-image-3 {
+				background-image: url("https://s3.amazonaws.com/blissfulmoments/featured/featured_3.jpg");
+			}
+			#featured-image-4 {
+				background-image: url("https://s3.amazonaws.com/blissfulmoments/featured/featured_4.jpg");
+			}
+			#featured-image-5 {
+				background-image: url("https://s3.amazonaws.com/blissfulmoments/featured/featured_5.jpg");
+			}
+			#featured-image-6 {
+				background-image: url("https://s3.amazonaws.com/blissfulmoments/featured/featured_6.jpg");
+			}
+			#featured-image-7 {
+				background-image: url("https://s3.amazonaws.com/blissfulmoments/featured/featured_7.jpg");
 			}
 			.flickity-page-dots {
 				bottom: 10px;

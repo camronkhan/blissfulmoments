@@ -2,6 +2,8 @@
 $(document).on('turbolinks:load', function() {
   var flickityBottom, topnavFlickityIsActive, topnavMainIsActive;
   console.log("$(document).on 'turbolinks:load', ->");
+  topnavMainIsActive = true;
+  topnavFlickityIsActive = true;
   if ($('.landing').length > 0) {
     console.log("$('.landing').length > 0");
     $('.topnav-main').hide();
