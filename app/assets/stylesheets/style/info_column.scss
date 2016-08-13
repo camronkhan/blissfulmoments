@@ -1,0 +1,24 @@
+#info-column {
+	h3 {
+		margin-top: 0;
+	}
+	p {
+		margin-bottom: 50px;
+	}
+	.info-icon {
+		padding-right: 30px;
+	}
+	.fa {
+		color: $pink;
+	}
+	.info-content {
+		padding-left: 30px;
+		border: none;
+		@media screen and (min-width: $mdScreen) {
+			border-left: 1px solid $light-grey;
+		}	
+	}
+	.last-element {
+		margin-bottom: 0;
+	}
+}

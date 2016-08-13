@@ -5,20 +5,32 @@
 				<h1 class="page-title"><%= @page_title %></h1>
 			</div>
 		</header>
-		<form>
-			<div class="form">
-				<%= simple_form_for @message, url: contact_path do |f| %>
-					<%= f.input :name, as: :string %>
-					<%= f.input :email, as: :email %>
-					<%= f.input :content, as: :text, input_html: { rows: 10 } %>
-					<div class="btn-wrapper">
-						<%= f.button :submit, class: 'btn btn-primary' %>
-					</div>
-				<% end %>
+		<section class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<h2>Let's Talk<br><small id="discuss">Please take a moment to connect with me. I would love the opportunity to discuss potential projects or my qualifications with you.</small></h2>
+					<%= form_tag(controller: 'messages', action: 'create', method: 'post') do %>
+						<div class="form-group">
+							<%= label_tag :name %>
+							<%= text_field_tag :name, nil, placeholder: 'First and Last', class: 'form-control' %>
+						</div>
+						<div class="form-group">
+							<%= label_tag :email %>
+							<%= text_field_tag :email, nil, placeholder: 'email@example.com', class: 'form-control' %>
+						</div>
+						<div class="form-group">
+							<%= label_tag :content, 'Message' %>
+							<%= text_area_tag :content, nil, placeholder: 'What\'s on your mind?', rows: 8, class: 'form-control' %>
+						</div>
+						<%= submit_tag 'Submit', class: 'button' %>
+						<%= link_to 'Cancel', contact_path, class: 'button button-secondary' %>
+					<% end %>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-4">
+					<%= render partial: 'partials/info_column' %>
+				</div>
 			</div>
-			<div class="btn-wrapper">
-				<%= link_to 'Cancel', root_path, class: 'btn btn-primary' %>
-			</div>
-		</form>
+		</section>
 	</article>
 </div>

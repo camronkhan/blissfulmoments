@@ -1,3 +1,30 @@
 #contact {
-	
+	h2 {
+		margin-top: 0;
+		margin-bottom: 20px;
+		#discuss {
+			text-transform: none;
+		}
+	}
+	.button {
+		margin-top: 20px;
+		margin-right: 5px;
+	}
+	.button-secondary {
+		margin-left: 5px;
+	}
+	#info-column {
+		margin-top: 60px;
+		margin-bottom: 50px;
+		@media screen and (min-width: $mdScreen) {
+			margin-top: 0;
+			margin-bottom: 9;
+		}
+		.info-content {
+			padding-left: 15px;
+			@media screen and (min-width: $mdScreen) {
+				padding-left: 30px;
+			}
+		}
+	}
 }

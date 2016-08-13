@@ -40,6 +40,9 @@
 				<p>Customize your location for memorable photos</p>
 			</div>
 		</div>
+		<div class="text-center">
+			<%= link_to("Learn More", about_path, class: 'button') %>
+		</div>
 	</section>
 	<section class="testimonial blurry-lights">
 		<div class="semitransparent-mask flex-container flex-row flex-horizontal-center flex-vertical-center">
@@ -47,6 +50,21 @@
 				<p class="quote">I did a maternity photo shoot with Stephanie and the pictures came out beautiful! I really enjoyed the entire session and the variety of pictures with different angles/props. She has a lot of creative ideas and things of hers you can use but also lets you bring and use whatever you'd like. She's very professional and easy to work with. I've also seen albums of other pictures she's taken and they are great. I can't wait for her to do my newborn pictures :-)</p>
 				<p class="signature pull-right">Jeanette M.</p>
 			</div>
+		</div>
+	</section>
+	<section class="contact container">
+		<h2 class="text-center">Contact Information</h2>
+		<div class="section-underline"></div>
+		<div class="row">
+			<div class="col-md-7">
+				<%= render partial: 'partials/google_map' %>
+			</div>
+			<div class="col-md-5">
+				<%= render partial: 'partials/info_column' %>
+			</div>
+		</div>
+		<div class="text-center">
+			<%= link_to("Contact Me", contact_path, class: 'button') %>
 		</div>
 	</section>
 </div>
